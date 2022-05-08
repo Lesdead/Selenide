@@ -7,7 +7,6 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 11
 
-//
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
@@ -19,7 +18,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     testImplementation 'com.codeborne:selenide:5.19.0'
     testImplementation 'org.slf4j:slf4j-simple:1.7.36'
-
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.5'
+    testImplementation("io.github.bonigarcia:webdrivermanager:5.1.1")
 }
 
 test {
